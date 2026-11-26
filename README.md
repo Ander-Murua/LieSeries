@@ -36,24 +36,33 @@ where E_t is the nested bracket of the Hall tree t. `HallCoefficients[A]` return
 
 Requires Mathematica 12 or later (it may work on earlier versions, but has not been checked).
 
-Download the release, unzip it, and either register the folder for the current session
+The simplest way is to install the paclet attached to the latest [GitHub release](https://github.com/Ander-Murua/LieSeries/releases) directly from Mathematica:
 
 ```mathematica
-PacletDirectoryLoad["/path/to/LieSeries"];
+PacletInstall["https://github.com/Ander-Murua/LieSeries/releases/download/v1.0.0/LieSeries-1.0.0.paclet"];
 Needs["LieSeries`"]
 ```
 
-or install it permanently
+The installation is permanent: in later sessions, ``Needs["LieSeries`"]`` is enough.
+
+Alternatively, download "Source code (zip)" from the assets of the [release](https://github.com/Ander-Murua/LieSeries/releases), unzip it (it gives a folder `LieSeries-1.0.0`), and either register the folder for the current session
 
 ```mathematica
-PacletInstall[CreatePacletArchive["/path/to/LieSeries"]];
+PacletDirectoryLoad["/path/to/LieSeries-1.0.0"];
+Needs["LieSeries`"]
+```
+
+or install it from the folder
+
+```mathematica
+PacletInstall[CreatePacletArchive["/path/to/LieSeries-1.0.0"]];
 Needs["LieSeries`"]
 ```
 
 or simply load the package file directly:
 
 ```mathematica
-Get["/path/to/LieSeries/Kernel/LieSeries.wl"]
+Get["/path/to/LieSeries-1.0.0/Kernel/LieSeries.wl"]
 ```
 
 ## Quick start
