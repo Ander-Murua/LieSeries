@@ -1,5 +1,7 @@
 # LieSeries
 
+[![DOI](https://zenodo.org/badge/1469845757.svg)](https://doi.org/10.5281/zenodo.24547043)
+
 A Wolfram Language (Mathematica) package for computing with **Lie series in the free Lie algebra on two generators**, expressed in **generalized Hall bases** in the sense of Viennot.
 
 It provides:
@@ -176,7 +178,7 @@ In the code, Hall trees are tree indices, l and r are the tables `l[t]`, `r[t]`,
 
 ## How to cite
 
-If you use this package, please cite it via its Zenodo DOI (see `CITATION.cff`).
+If you use this package, please cite it via its Zenodo DOI, [10.5281/zenodo.24547043](https://doi.org/10.5281/zenodo.24547043) (all versions; see also `CITATION.cff`).
 
 ## References
 
