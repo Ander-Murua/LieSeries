@@ -1,0 +1,1317 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     71461,       1309]
+NotebookOptionsPosition[     70687,       1286]
+NotebookOutlinePosition[     71148,       1304]
+CellTagsIndexPosition[     71105,       1301]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "LieSeriesPath", " ", "=", 
+   " ", "\"\<~/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/LieSeries1.0\>\"\
+"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PacletDirectoryLoad", "[", "LieSeriesPath", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<LieSeries`\>\"", "]"}], ";"}], "\n", 
+ RowBox[{"report", "=", 
+  RowBox[{"TestReport", "[", 
+   RowBox[{"LieSeriesPath", " ", "<>", "\"\</Tests/LieSeries.wlt\>\""}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{4.004405945208256*^9, 4.004405945208308*^9}, {
+   4.004406199550911*^9, 4.0044062461886187`*^9}, {4.0044063766197577`*^9, 
+   4.004406399936245*^9}, {4.004406431233035*^9, 4.004406436916163*^9}, {
+   4.0044170985562477`*^9, 4.0044171731413183`*^9}, 4.004417285204893*^9, 
+   4.0044880855467653`*^9, 4.004502791298499*^9, {4.004634941558784*^9, 
+   4.004634973550219*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"cbc1b24e-f959-46d4-a196-999726d69f36"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["TestReportObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              InsetBox[
+               BoxData[
+                FormBox[
+                 PaneBox[
+                  DynamicBox[
+                   FEPrivate`FrontEndResource[
+                   "MUnitExpressions", "SuccessIcon"]], Alignment -> Center, 
+                  ImageSize -> 
+                  Dynamic[{
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], TraditionalForm]]]}, 
+             PlotRange -> {{0, 1}, {0, 1}}, Background -> GrayLevel[0.93], 
+             Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Title: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Test Report: LieSeries.wlt\"", "SummaryItem"]}], 
+               "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Success rate: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   InterpretationBox[
+                    StyleBox["\"100%\"", ShowStringCharacters -> False], 1., 
+                    AutoDelete -> True], PercentForm], "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Tests count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["35", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              InsetBox[
+               BoxData[
+                FormBox[
+                 PaneBox[
+                  DynamicBox[
+                   FEPrivate`FrontEndResource[
+                   "MUnitExpressions", "SuccessIcon"]], Alignment -> Center, 
+                  ImageSize -> 
+                  Dynamic[{
+                    Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], TraditionalForm]]]}, 
+             PlotRange -> {{0, 1}, {0, 1}}, Background -> GrayLevel[0.93], 
+             Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], Frame -> True, FrameTicks -> None, 
+             FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Title: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Test Report: LieSeries.wlt\"", "SummaryItem"]}], 
+               "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Success rate: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   InterpretationBox[
+                    StyleBox["\"100%\"", ShowStringCharacters -> False], 1., 
+                    AutoDelete -> True], PercentForm], "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Tests count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["35", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Success count: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["35", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Time elapsed: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "5.1929750000000000002`5.321863185303003", "\"s\"", 
+                    "seconds", "\"Seconds\""}, "Quantity", SyntaxForm -> Mod],
+                   "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  TestReportObject[<|
+   "Title" -> "Test Report: LieSeries.wlt", "Aborted" -> False, 
+    "TestResults" -> <|
+     3680039981266855060 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031691798`15.656168686115839*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "1dbb8b53-8f82-4e56-82f0-d007d5e8059b", "TestID" -> 
+         "Witt-dimensions", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "b457770d-cfbe-49bc-863d-75eac3f24bce", "Input" -> HoldForm[
+           Union[
+            Flatten[
+             Table[
+             LieSeries`LieSeriesInitialize[{"X", "Y"}, 6, 
+                LieSeries`HallOrder -> $CellContext`ord, 
+                LieSeries`Reversed -> $CellContext`rev]; 
+              Table[LieSeries`HallDimension[$CellContext`n] == \
+$CellContext`wittDimension[$CellContext`n], {$CellContext`n, 1, 
+                 6}], {$CellContext`ord, $CellContext`$orders}, \
+{$CellContext`rev, {True, False}}]]]], "ExpectedMessages" -> HoldForm[{}], 
+         "ActualOutput" -> HoldForm[{True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.042677`4.7807088807203675, "CPUTimeUsed" -> 
+         0.042372000000000076`, "MemoryUsed" -> 345672, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[{True}], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      7089801095218919926 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031734761`15.656168686120497*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "3ef722f0-60d9-4c87-a124-693b7b06f09d", "TestID" -> 
+         "Antisymmetry-Jacobi", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "d374e4c8-eae8-45e1-bed5-e508187d7e15", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 5]; $CellContext`A = 
+            ReplaceAll[
+              LieSeries`GenericLieSeries[$CellContext`a], $CellContext`a[
+                Pattern[$CellContext`i, 
+                 Blank[]]] :> $CellContext`i - 3]; $CellContext`B = ReplaceAll[
+              LieSeries`GenericLieSeries[$CellContext`b], $CellContext`b[
+                Pattern[$CellContext`i, 
+                 Blank[]]] :> (-1)^$CellContext`i ($CellContext`i + 
+                1)]; $CellContext`C1 = ReplaceAll[
+              LieSeries`GenericLieSeries[$CellContext`c], $CellContext`c[
+                Pattern[$CellContext`i, 
+                 Blank[]]] :> Mod[$CellContext`i, 4] - 1]; {
+             $CellContext`seriesEqual[
+              LieSeries`LieBracket[$CellContext`A, $CellContext`B], -
+              LieSeries`LieBracket[$CellContext`B, $CellContext`A]], 
+             $CellContext`seriesEqual[LieSeries`LieBracket[$CellContext`A, 
+                LieSeries`LieBracket[$CellContext`B, $CellContext`C1]] + 
+              LieSeries`LieBracket[$CellContext`B, 
+                LieSeries`LieBracket[$CellContext`C1, $CellContext`A]] + 
+              LieSeries`LieBracket[$CellContext`C1, 
+                LieSeries`LieBracket[$CellContext`A, $CellContext`B]], 
+              LieSeries`LieSeries[0]]}], "ExpectedMessages" -> HoldForm[{}], 
+         "ActualOutput" -> HoldForm[{True, True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.005112`3.8591058429823373, "CPUTimeUsed" -> 
+         0.005112999999999923, "MemoryUsed" -> -19712, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{True, True}], "Outcome" -> "Success", "FailureType" -> 
+         None|>], 6192006843020759219 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031740066`15.656168686121074*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "4621c9da-48f8-4f9f-8cf6-23efdd75c952", "TestID" -> 
+         "Generic-series-coefficients", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "4b44e672-11b6-43e2-8049-923f0d6a4e3d", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 5, LieSeries`HallOrder -> 
+             "Lyndon", LieSeries`Reversed -> False]; 
+           LieSeries`HallCoefficients[
+              LieSeries`GenericLieSeries[$CellContext`a]] === Table[
+              $CellContext`a[$CellContext`i], {$CellContext`i, 
+               Length[
+                LieSeries`HallBasisElements[5]]}]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm[True], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.001135`3.2055108593611354, "CPUTimeUsed" -> 0.0011350000000001081`,
+          "MemoryUsed" -> 12368, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[True], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 4928914009785662453 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031741392`15.656168686121216*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "fd9bc6cd-ce2d-457e-bf01-857d6779d1aa", "TestID" -> 
+         "BCH-degree-4-Standard", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "5e778915-3a9f-406b-8aa2-a97170942c7d", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 4]; 
+           LieSeries`NonZeroHallCoefficients[LieSeries`$BCHLieSeries]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{
+           "X" -> 1, "Y" -> 1, LieSeries`LieBracket["X", "Y"] -> 
+            Rational[1, 2], LieSeries`LieBracket["X", 
+              LieSeries`LieBracket["X", "Y"]] -> Rational[1, 12], 
+            LieSeries`LieBracket["Y", 
+              LieSeries`LieBracket["X", "Y"]] -> Rational[-1, 12], 
+            LieSeries`LieBracket["Y", 
+              LieSeries`LieBracket["X", 
+               LieSeries`LieBracket["X", "Y"]]] -> Rational[-1, 24]}], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.000918`3.113357679033236, "CPUTimeUsed" -> 0.0009180000000000854, 
+         "MemoryUsed" -> -12016, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> 
+         HoldForm[{
+           "X" -> 1, "Y" -> 1, LieSeries`LieBracket["X", "Y"] -> 
+            Rational[1, 2], LieSeries`LieBracket["X", 
+              LieSeries`LieBracket["X", "Y"]] -> Rational[1, 12], 
+            LieSeries`LieBracket["Y", 
+              LieSeries`LieBracket["X", "Y"]] -> Rational[-1, 12], 
+            LieSeries`LieBracket["Y", 
+              LieSeries`LieBracket["X", 
+               LieSeries`LieBracket["X", "Y"]]] -> Rational[-1, 24]}], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      7009819577200590196 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031742486`15.656168686121335*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "2da3ff9e-31fa-43a2-9ae8-a518a775ab51", "TestID" -> 
+         "BCH-matrices-all-orders", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "d50dbd4b-96e0-4f7f-a733-683f5c53754d", "Input" -> HoldForm[
+           Union[
+            Table[
+            LieSeries`LieSeriesInitialize[{"X", "Y"}, 5, 
+               LieSeries`HallOrder -> $CellContext`ord, 
+               LieSeries`Reversed -> $CellContext`ord =!= "Lyndon"]; 
+             LieSeries`BCH[$CellContext`mA, $CellContext`mB] == \
+$CellContext`nilLog[
+                Dot[
+                 $CellContext`nilExp[$CellContext`mA], 
+                 $CellContext`nilExp[$CellContext`mB]]], {$CellContext`ord, \
+$CellContext`$orders}]]], "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True}], "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.016983`4.38052940743625, "CPUTimeUsed" -> 0.02003100000000002, 
+         "MemoryUsed" -> 139656, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 5549778542909352439 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031759692`15.6561686861232*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "1ae45771-eb00-4025-a19f-020ee2b4bc57", "TestID" -> 
+         "SymmetricBCH-other-generator-names", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "d0c18989-2506-40b9-b2f0-aa26af65673f", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"P", "Q"}, 5]; {
+            LieSeries`SymmetricBCH[$CellContext`mA, $CellContext`mB] == \
+$CellContext`nilLog[
+               Dot[
+                $CellContext`nilExp[$CellContext`mA/2], 
+                $CellContext`nilExp[$CellContext`mB], 
+                $CellContext`nilExp[$CellContext`mA/2]]], 
+             $CellContext`seriesEqual[
+              LieSeries`SymmetricBCH[-LieSeries`LieSeries["P"], 
+               LieSeries`SymmetricBCH[
+                LieSeries`LieSeries["P"], 
+                LieSeries`LieSeries["Q"]]], 
+              LieSeries`LieSeries["Q"]]}], "ExpectedMessages" -> HoldForm[{}],
+          "ActualOutput" -> HoldForm[{True, True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.004774`3.8293974125027295, "CPUTimeUsed" -> 
+         0.005657000000000023, "MemoryUsed" -> 944, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{True, True}], "Outcome" -> "Success", "FailureType" -> 
+         None|>], 2667679774140330591 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031764687`15.656168686123744*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "287d2a27-379b-4095-83ee-64e0ceacc0ad", "TestID" -> 
+         "BCH-series-arguments", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "6fdb6969-0ac2-4dd3-b225-ef657fdb6f16", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 5]; $CellContext`X = 
+            LieSeries`LieSeries["X"]; $CellContext`Y = 
+            LieSeries`LieSeries["Y"]; $CellContext`seriesEqual[
+             LieSeries`BCH[$CellContext`X + $CellContext`Y, -$CellContext`X], 
+             
+             LieSeries`LieSeriesSubstitution[
+             LieSeries`$BCHLieSeries, {
+              "X" -> $CellContext`X + $CellContext`Y, 
+               "Y" -> -$CellContext`X}]]], "ExpectedMessages" -> HoldForm[{}],
+          "ActualOutput" -> HoldForm[True], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.003151`3.6489634010059935, "CPUTimeUsed" -> 
+         0.0031520000000000437`, "MemoryUsed" -> 5920, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[True], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      5625028907348583731 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031768032`15.656168686124108*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "bf7d5990-9a8d-4203-a2db-77f1eb1016c4", "TestID" -> 
+         "BCH-inverse", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "06689c92-df81-4a56-8793-8719b78fc4bb", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 5]; $CellContext`X = 
+            LieSeries`LieSeries["X"]; $CellContext`Y = 
+            LieSeries`LieSeries["Y"]; $CellContext`seriesEqual[
+             LieSeries`BCH[
+              
+              LieSeries`BCH[$CellContext`X, $CellContext`Y], \
+-$CellContext`Y], $CellContext`X]], "ExpectedMessages" -> HoldForm[{}], 
+         "ActualOutput" -> HoldForm[True], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.003178`3.652668890703355, "CPUTimeUsed" -> 
+         0.003179000000000043, "MemoryUsed" -> 4376, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[True], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      1526490936985960710 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031771408`15.65616868612447*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "9fb045fc-408b-4375-a106-409639e37fb8", "TestID" -> 
+         "ExpAd-matrices", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "ee14ff44-6d60-470a-850e-7b847e852091", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 5]; 
+           LieSeries`LieSeriesSubstitution[
+              LieSeries`ExpAd[
+               LieSeries`LieSeries["X"], 
+               LieSeries`LieSeries["Y"]], {
+              "X" -> $CellContext`mA, "Y" -> $CellContext`mB}] == Dot[
+              $CellContext`nilExp[$CellContext`mA], $CellContext`mB, 
+              $CellContext`nilExp[-$CellContext`mA]]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm[True], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.001942`3.4387642234039797, "CPUTimeUsed" -> 0.002378999999999909, 
+         "MemoryUsed" -> 680, "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[True], "Outcome" -> "Success", "FailureType" -> None|>], 
+      8632452259919288654 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031773524`15.656168686124701*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "9801e4f2-9c64-4c63-b091-2931bcd8fac2", "TestID" -> 
+         "Zassenhaus-matrices", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "2d2cc177-f6cb-4957-b3c1-3102949ce874", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 
+             5]; $CellContext`nilExp[$CellContext`mA + $CellContext`mB] == 
+            Apply[Dot, 
+              Join[{
+                $CellContext`nilExp[$CellContext`mA], 
+                $CellContext`nilExp[$CellContext`mB]}, 
+               Map[$CellContext`nilExp[
+                 
+                 LieSeries`LieSeriesSubstitution[#, {
+                  "X" -> $CellContext`mA, "Y" -> $CellContext`mB}]]& , 
+                LieSeries`ZassenhausTerms[5]]]]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm[True], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.008742`4.092125799985627, "CPUTimeUsed" -> 0.010240000000000027`, 
+         "MemoryUsed" -> 7784, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[True], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 8234529917791956670 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031782485`15.656168686125673*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "11bec44b-101d-4c18-9661-81013b5ca0aa", "TestID" -> 
+         "Proj-Set", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "30b9fe9f-75f4-46be-8c8f-4638a18f1a40", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 5]; $CellContext`Z = 
+            LieSeries`$BCHLieSeries; {
+             $CellContext`seriesEqual[
+             LieSeries`LieSeriesProj[$CellContext`Z, 3] + 
+              LieSeries`LieSeriesProj[$CellContext`Z, {4}] + 
+              LieSeries`LieSeriesProj[$CellContext`Z, {5}], $CellContext`Z], 
+             $CellContext`seriesEqual[
+              LieSeries`LieSeriesSet[$CellContext`Z, 
+               LieSeries`LieSeries[0], {2}], $CellContext`Z - 
+              LieSeries`LieSeriesProj[$CellContext`Z, {2}]]}], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True, True}], "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.001613`3.3581493652209553, "CPUTimeUsed" -> 0.0016140000000000043`,
+          "MemoryUsed" -> 4984, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{True, True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 3309642681618389406 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031784294`15.65616868612587*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "9b424692-b494-4188-847a-7d807af6b36e", "TestID" -> 
+         "LieSeriesMap", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "122958b6-533c-444f-8a28-7362c1dde045", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 4]; $CellContext`A = 
+            ReplaceAll[
+              LieSeries`GenericLieSeries[$CellContext`a], $CellContext`a[
+                Pattern[$CellContext`i, 
+                 Blank[]]] :> $CellContext`i - 4]; {LieSeries`HallCoefficients[
+               LieSeries`LieSeriesMap[$CellContext`g, $CellContext`A]] === 
+             Map[$CellContext`g, 
+               LieSeries`HallCoefficients[$CellContext`A]], 
+             $CellContext`seriesEqual[
+              LieSeries`LieSeriesMap[
+              Identity, $CellContext`A], $CellContext`A], 
+             LieSeries`HallCoefficients[
+               LieSeries`LieSeriesMap[Abs, $CellContext`A]] === Abs[
+               LieSeries`HallCoefficients[$CellContext`A]]}], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True, True, True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.000613`2.937975472350409, "CPUTimeUsed" -> 
+         0.0006139999999998924, "MemoryUsed" -> -13896, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{True, True, True}], "Outcome" -> "Success", "FailureType" -> 
+         None|>], 3482274507907071485 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642031785149`15.656168686125964*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "fb09b07f-4d3e-4df0-aebf-c36675d4039c", "TestID" -> 
+         "ClassicalMechanics-dimensions", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "11381e49-91aa-474e-9ccb-d675ab293b66", "Input" -> HoldForm[
+           LieSeries`Private`cmDimensions[20]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{{2, 1, 2, 3, 6, 9, 18, 30, 56, 99, 186, 335, 630, 1161, 
+           2182, 4080, 7710, 14532, 27594, 52377}, {2, 1, 2, 2, 4, 5, 10, 14, 
+           25, 39, 69, 110, 193, 320, 555, 938, 1630, 2786, 4852, 8370}}], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         3.459335`6.689507618709232, "CPUTimeUsed" -> 3.276076, "MemoryUsed" -> 
+         2840088, "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{{2, 1, 2, 3, 6, 9, 18, 30, 56, 99, 186, 335, 630, 1161, 
+           2182, 4080, 7710, 14532, 27594, 52377}, {2, 1, 2, 2, 4, 5, 10, 14, 
+           25, 39, 69, 110, 193, 320, 555, 938, 1630, 2786, 4852, 8370}}], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      3492935570553283856 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035244986`15.656168686501173*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "90edd1e8-00a4-4ead-bb49-51702423e2b6", "TestID" -> 
+         "ClassicalMechanics-ideal", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "26f431e0-26a6-40f4-b09b-e5301dcaf793", "Input" -> HoldForm[
+           
+           Module[{$CellContext`a, $CellContext`b, $CellContext`spanI}, 
+            LieSeries`LieSeriesInitialize[{"A", "B"}, 8, LieSeries`HallOrder -> 
+              "PDegree", LieSeries`Reversed -> False]; $CellContext`a = 
+             LieSeries`LieSeries["A"]; $CellContext`b = 
+             LieSeries`LieSeries["B"]; $CellContext`spanI[4] = {
+               LieSeries`LieBracket[$CellContext`b, 
+                LieSeries`LieBracket[$CellContext`b, 
+                 LieSeries`LieBracket[$CellContext`b, $CellContext`a]]]}; 
+            Do[$CellContext`spanI[$CellContext`n] = Flatten[
+                Table[
+                 
+                 LieSeries`LieBracket[$CellContext`g, $CellContext`y, \
+{$CellContext`n}], {$CellContext`g, {$CellContext`a, $CellContext`b}}, \
+{$CellContext`y, 
+                  $CellContext`spanI[$CellContext`n - 1]}]], {$CellContext`n, 
+               5, 8}]; {
+              Table[
+               Length[
+                
+                LieSeries`ClassicalMechanicsBasisElements[{$CellContext`n}]], \
+{$CellContext`n, 1, 8}], 
+              Complement[
+               LieSeries`HallBasisElements[4], 
+               LieSeries`ClassicalMechanicsBasisElements[4]], 
+              Union[
+               Flatten[
+                Table[
+                 
+                 LieSeries`ClassicalMechanicsCoefficients[$CellContext`y, \
+{$CellContext`n}], {$CellContext`n, 4, 8}, {$CellContext`y, 
+                  $CellContext`spanI[$CellContext`n]}]]]}]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{{2, 1, 2, 2, 4, 5, 10, 14}, {
+             LieSeries`LieBracket[
+              LieSeries`LieBracket[
+               LieSeries`LieBracket["A", "B"], "B"], "B"]}, {0}}], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.009711`4.13777895195423, "CPUTimeUsed" -> 0.009707999999999828, 
+         "MemoryUsed" -> 206416, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{{2, 1, 2, 2, 4, 5, 10, 14}, {
+             LieSeries`LieBracket[
+              LieSeries`LieBracket[
+               LieSeries`LieBracket["A", "B"], "B"], "B"]}, {0}}], "Outcome" -> 
+         "Success", "FailureType" -> None|>], 4818330733471980677 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035254973`15.656168686502255*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "ec96ab9d-253b-4b69-8903-18cb6d76c766", "TestID" -> 
+         "Quotient-basis", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "b1756967-4aac-4bea-9ba7-87f154013bc5", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"A", "B"}, 8, LieSeries`LieAlgebra -> 
+             "ClassicalMechanics"]; {
+             Table[
+              
+              LieSeries`HallDimension[$CellContext`n], {$CellContext`n, 1, 
+               8}], LieSeries`HallBasisElements[8] === 
+             LieSeries`ClassicalMechanicsBasisElements[8], 
+             LieSeries`LieSeriesBasisInfo[]["LieAlgebra"], 
+             LieSeries`LieSeriesBasisInfo[]["HallOrder"], 
+             LieSeries`LieSeriesBasisInfo[]["Dimensions"]}], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{{2, 1, 2, 2, 4, 5, 10, 14}, True, "ClassicalMechanics", 
+            "PDegree", {2, 1, 2, 2, 4, 5, 10, 14}}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.00841`4.075310993629906, "CPUTimeUsed" -> 
+         0.008409000000000333, "MemoryUsed" -> 8784, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{{2, 1, 2, 2, 4, 5, 10, 14}, True, "ClassicalMechanics", 
+            "PDegree", {2, 1, 2, 2, 4, 5, 10, 14}}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 8958728228837575694 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035263607`15.656168686503193*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "8fbc067e-3c19-4681-be5a-246c3e82f5db", "TestID" -> 
+         "Quotient-coefficients", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "44dffd74-1162-4aab-8c85-b6c42ce78f87", "Input" -> HoldForm[
+           
+           Module[{$CellContext`cfree, $CellContext`A, $CellContext`B, \
+$CellContext`Z, $CellContext`xI}, 
+            LieSeries`LieSeriesInitialize[{"A", "B"}, 6, LieSeries`HallOrder -> 
+              "PDegree", LieSeries`Reversed -> False]; $CellContext`cfree = {
+               LieSeries`ClassicalMechanicsCoefficients[
+               LieSeries`$BCHLieSeries], 
+               LieSeries`ClassicalMechanicsCoefficients[
+               LieSeries`$SymmetricBCHLieSeries]}; 
+            LieSeries`LieSeriesInitialize[{"A", "B"}, 6, LieSeries`LieAlgebra -> 
+              "ClassicalMechanics", LieSeries`Reversed -> 
+              False]; $CellContext`A = 
+             LieSeries`LieSeries["A"]; $CellContext`B = 
+             LieSeries`LieSeries["B"]; $CellContext`xI = 
+             LieSeries`LieBracket[$CellContext`A, 
+               LieSeries`LieBracket[$CellContext`B, 
+                LieSeries`LieBracket[$CellContext`B, 
+                 LieSeries`LieBracket[$CellContext`B, $CellContext`A]]]]; {{
+                LieSeries`HallCoefficients[LieSeries`$BCHLieSeries], 
+                LieSeries`HallCoefficients[
+                LieSeries`$SymmetricBCHLieSeries]} === $CellContext`cfree, 
+              LieSeries`ClassicalMechanicsCoefficients[
+               LieSeries`$BCHLieSeries] === 
+              LieSeries`HallCoefficients[LieSeries`$BCHLieSeries], 
+              Union[
+               LieSeries`HallCoefficients[$CellContext`xI]], 
+              LieSeries`ZeroLieSeriesEquations[$CellContext`xI], 
+              LieSeries`NonZeroHallCoefficients[$CellContext`xI]}]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True, True, {0}, True, {}}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.007579`4.030126904897845, "CPUTimeUsed" -> 
+         0.00758800000000015, "MemoryUsed" -> -146720, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{True, True, {0}, True, {}}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 6497273451189471297 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035271395`15.65616868650404*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "de30cfeb-01c6-4ae3-abd2-7f94ba2f355c", "TestID" -> 
+         "Quotient-substitution", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "9fc41f4b-ebb3-464d-94be-bbf877abd10d", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"A", "B"}, 5, LieSeries`LieAlgebra -> 
+             "ClassicalMechanics"]; {LieSeries`LieBracket[$CellContext`mB, 
+               LieSeries`LieBracket[$CellContext`mB, 
+                LieSeries`LieBracket[$CellContext`mB, $CellContext`mA]]] =!= 
+             0 $CellContext`mA, 
+             LieSeries`BCH[$CellContext`mA, $CellContext`mB] == \
+$CellContext`nilLog[
+               Dot[
+                $CellContext`nilExp[$CellContext`mA], 
+                $CellContext`nilExp[$CellContext`mB]]]}], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm[{True, True}], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.003022`3.6308094578350003, "CPUTimeUsed" -> 0.003777999999999615, 
+         "MemoryUsed" -> -24520, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{True, True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 3853448679405087584 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035274687`15.656168686504396*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "d90ed91b-8024-4d2b-9910-826355bc544e", "TestID" -> 
+         "Quotient-GenericLieSeries-LieSeriesMap", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "2a2f3a07-ae93-4a97-8d22-8fb4cd3702a3", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"A", "B"}, 5, LieSeries`LieAlgebra -> 
+             "ClassicalMechanics"]; Module[{$CellContext`U = ReplaceAll[
+                LieSeries`GenericLieSeries[$CellContext`a], $CellContext`a[
+                  Pattern[$CellContext`i, 
+                   Blank[]]] :> $CellContext`i - 5]}, {
+             LieSeries`HallCoefficients[
+                LieSeries`GenericLieSeries[$CellContext`a]] === 
+              Array[$CellContext`a, 
+                Length[
+                 LieSeries`HallBasisElements[5]]], 
+              LieSeries`HallCoefficients[
+                LieSeries`LieSeriesMap[$CellContext`g, $CellContext`U]] === 
+              Map[$CellContext`g, 
+                LieSeries`HallCoefficients[$CellContext`U]], 
+              LieSeries`HallCoefficients[
+                LieSeries`LieSeriesMap[Abs, $CellContext`U]] === Abs[
+                LieSeries`HallCoefficients[$CellContext`U]]}]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True, True, True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.001303`3.2654594135445785, "CPUTimeUsed" -> 
+         0.0013030000000000541`, "MemoryUsed" -> 3752, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{True, True, True}], "Outcome" -> "Success", "FailureType" -> 
+         None|>], 5806401934442099266 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035276198`15.656168686504557*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "d43911dd-8012-4f06-9ee9-209e05ba356a", "TestID" -> 
+         "Quotient-wrong-options", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "d75463f1-ad68-4f98-a7b2-3d002bfb73af", "Input" -> HoldForm[{
+            
+            LieSeries`LieSeriesInitialize[{"A", "B"}, 3, LieSeries`LieAlgebra -> 
+             "ClassicalMechanics", LieSeries`HallOrder -> "Lyndon"], 
+            
+            LieSeries`LieSeriesInitialize[{"A", "B"}, 3, LieSeries`LieAlgebra -> 
+             "Nilpotent"]}], "ExpectedMessages" -> HoldForm[{
+            MessageName[LieSeries`LieSeriesInitialize, "cmorder"], 
+            MessageName[LieSeries`LieSeriesInitialize, "lieal"]}], 
+         "ActualOutput" -> HoldForm[{$Failed, $Failed}], 
+         "ActualMessages" -> {
+           HoldForm[
+            Message[
+             MessageName[LieSeries`LieSeriesInitialize, "cmorder"], 
+             "Lyndon"]], 
+           HoldForm[
+            Message[
+             MessageName[LieSeries`LieSeriesInitialize, "lieal"], 
+             "Nilpotent"]]}, "AbsoluteTimeUsed" -> 
+         0.000139`2.2935297980860887, "CPUTimeUsed" -> 0.0001389999999998892, 
+         "MemoryUsed" -> 12056, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{$Failed, $Failed}], "Outcome" -> 
+         "Success", "FailureType" -> None|>], 4935107368641214494 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035276515`15.656168686504591*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "3a827ddc-fdd9-4ecb-86ed-a6d2ea4fcac5", "TestID" -> 
+         "ClassicalMechanics-wrong-basis", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "e8e6062b-d299-4d5b-b38e-4241018965d3", "Input" -> 
+         HoldForm[LieSeries`LieSeriesInitialize[{"X", "Y"}, 3]; Head[
+             LieSeries`ClassicalMechanicsCoefficients[
+              LieSeries`LieSeries["X"]]]], "ExpectedMessages" -> HoldForm[{
+            MessageName[LieSeries`LieSeries, "cmbasis"]}], "ActualOutput" -> 
+         HoldForm[LieSeries`ClassicalMechanicsCoefficients], "ActualMessages" -> {
+           HoldForm[
+            Message[
+             MessageName[LieSeries`LieSeries, "cmbasis"]]]}, 
+         "AbsoluteTimeUsed" -> 0.000396`2.7482101837575064, "CPUTimeUsed" -> 
+         0.0003970000000004248, "MemoryUsed" -> -28720, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[LieSeries`ClassicalMechanicsCoefficients], "Outcome" -> 
+         "Success", "FailureType" -> None|>], 7152944192762459613 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035277142`15.65616868650466*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "df5ab3b9-ea35-40d2-9921-4e692a520d6c", "TestID" -> 
+         "Substitution-custom-bracket", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "2bdf4386-9095-4ad4-b142-3bd8966d2c2a", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 3]; $CellContext`br[
+              Pattern[$CellContext`f, 
+               Blank[]], 
+              Pattern[$CellContext`g, 
+               Blank[]]] := $CellContext`f 
+              D[$CellContext`g, $CellContext`x] - $CellContext`g 
+             D[$CellContext`f, $CellContext`x]; 
+           Simplify[LieSeries`LieSeriesSubstitution[
+               LieSeries`LieBracket[
+                LieSeries`LieSeries["X"], 
+                LieSeries`LieSeries["Y"]], {
+               "X" -> $CellContext`x^2, "Y" -> 1/$CellContext`x}, 
+               LieSeries`LieBracketFunction -> $CellContext`br] - \
+$CellContext`br[$CellContext`x^2, 1/$CellContext`x]]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm[0], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.000459`2.812327683369255, "CPUTimeUsed" -> 
+         0.000460000000000349, "MemoryUsed" -> 6584, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[0], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      6888672532364868776 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035277768`15.656168686504728*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "1dcfcbff-4c09-4cae-a393-570fbc346648", "TestID" -> 
+         "Matrix-bracket", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "e3fdfab3-7e6d-4d08-ac1b-92ca917c6bb9", "Input" -> HoldForm[
+           LieSeries`LieBracket[{{1, 2}, {3, 4}}, {{0, 1}, {1, 0}}]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{{-1, -3}, {3, 1}}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.000022`1.4929376786542, "CPUTimeUsed" -> 
+         0.000020999999999382624`, "MemoryUsed" -> 3912, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{{-1, -3}, {3, 1}}], "Outcome" -> "Success", "FailureType" -> 
+         None|>], 7075724375487024538 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035277965`15.65616868650475*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "2b66f1cf-1f30-4e72-b1d8-27f36ca27e3d", "TestID" -> 
+         "No-product-of-series", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "1b3b7e06-232d-4cd7-a6d8-e2eaa1096a77", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 3]; 
+           Head[LieSeries`LieSeries["X"] LieSeries`LieSeries["Y"]]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[Times], "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.000357`2.703183213944187, "CPUTimeUsed" -> 0.0003580000000003025, 
+         "MemoryUsed" -> 3672, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[Times], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 201157597030230637 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035278474`15.656168686504806*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "41209068-5761-48a8-8e48-28f3651427b8", "TestID" -> 
+         "Lists-of-series-are-lists", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "7df029ce-d0ac-4874-bf36-6921ee107431", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 3]; $CellContext`X = 
+            LieSeries`LieSeries["X"]; $CellContext`Y = 
+            LieSeries`LieSeries["Y"]; 
+           Length[{$CellContext`X, $CellContext`Y}]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm[2], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.000332`2.6716530815360304, "CPUTimeUsed" -> 
+         0.0003330000000003608, "MemoryUsed" -> 3528, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[2], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      4443999391768974255 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035278964`15.656168686504861*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "80537548-7da6-44a0-bde1-c65e3b4f6d4b", "TestID" -> 
+         "Diamond-notation", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "8ae0c6b5-1e7d-490f-bec1-9688de64406d", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 3]; $CellContext`X = 
+            LieSeries`LieSeries["X"]; $CellContext`Y = 
+            LieSeries`LieSeries["Y"]; 
+           Diamond[$CellContext`X, $CellContext`Y] === 
+            LieSeries`LieBracket[$CellContext`X, $CellContext`Y]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> HoldForm[True],
+          "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.000399`2.751487893518742, "CPUTimeUsed" -> 0.0003979999999996764, 
+         "MemoryUsed" -> 4104, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[True], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 6348033984553825058 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.00464203527953`15.656168686504921*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "afadd4ef-c780-4ae1-ad51-d79645cda90c", "TestID" -> 
+         "Stale-series", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "3e9de323-f6ec-4a34-81ff-88f6e3428b5f", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 3]; $CellContext`Xold = 
+            LieSeries`LieSeries["X"]; 
+           LieSeries`LieSeriesInitialize[{"X", "Y"}, 4]; {
+             LieSeries`LieSeriesQ[$CellContext`Xold], 
+             LieSeries`LieSeriesQ[
+              LieSeries`LieSeries["X"]], 
+             LieSeries`LieBracket[$CellContext`Xold, 
+              LieSeries`LieSeries["Y"]]}], "ExpectedMessages" -> HoldForm[{
+            MessageName[LieSeries`LieSeries, "stale"]}], "ActualOutput" -> 
+         HoldForm[{False, True, $Failed}], "ActualMessages" -> {
+           HoldForm[
+            Message[
+             MessageName[LieSeries`LieSeries, "stale"]]]}, "AbsoluteTimeUsed" -> 
+         0.000918`3.113357679033236, "CPUTimeUsed" -> 0.0009100000000001884, 
+         "MemoryUsed" -> 13760, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{False, True, $Failed}], "Outcome" -> 
+         "Success", "FailureType" -> None|>], 3881709909166108897 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035280613`15.656168686505037*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "7c7a3ce4-aeca-436d-b835-213ff6801340", "TestID" -> 
+         "Unknown-order", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "3816a2b1-00e7-4617-a9d8-151a458f70cf", "Input" -> HoldForm[
+           
+           LieSeries`LieSeriesInitialize[{"X", "Y"}, 3, LieSeries`HallOrder -> 
+            "NoSuchOrder"]], "ExpectedMessages" -> HoldForm[{
+            MessageName[LieSeries`LieSeriesInitialize, "order"]}], 
+         "ActualOutput" -> HoldForm[$Failed], "ActualMessages" -> {
+           HoldForm[
+            Message[
+             MessageName[LieSeries`LieSeriesInitialize, "order"], 
+             "NoSuchOrder", {
+             "Standard", "Lyndon", "Tall", "Left", "Right", "PDegree"}]]}, 
+         "AbsoluteTimeUsed" -> 0.000061`1.935844832842761, "CPUTimeUsed" -> 
+         0.00006199999999978445, "MemoryUsed" -> 4320, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[$Failed],
+          "Outcome" -> "Success", "FailureType" -> None|>], 
+      8526203608211780829 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.00464203528083`15.656168686505062*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "b0f445bc-1810-4e06-afbb-240b4750f7da", "TestID" -> 
+         "Unknown-option", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "8b3381b9-dd45-4790-a5fc-cab9a7ba887f", "Input" -> HoldForm[
+           
+           LieSeries`LieSeriesInitialize[{"X", "Y"}, 
+            3, $CellContext`LessFunction -> $CellContext`LyndonLess]], 
+         "ExpectedMessages" -> HoldForm[{
+            MessageName[LieSeries`LieSeriesInitialize, "optx"]}], 
+         "ActualOutput" -> HoldForm[$Failed], "ActualMessages" -> {
+           HoldForm[
+            Message[
+             MessageName[
+             LieSeries`LieSeriesInitialize, 
+              "optx"], $CellContext`LessFunction -> $CellContext`LyndonLess, 
+             HoldForm[LieSeries`LieSeriesInitialize]]]}, "AbsoluteTimeUsed" -> 
+         0.007796`4.042386828277579, "CPUTimeUsed" -> 0.007782000000000622, 
+         "MemoryUsed" -> 6128, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[$Failed], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 1074118295097549266 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642035289545`15.656168686506009*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "b6390ed8-9799-40f7-9d5b-849ab84adbbb", "TestID" -> 
+         "Bracket-matrices-degree-12", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "336a31b9-0750-4bc2-a1a4-5183446cf4d9", "Input" -> HoldForm[
+           Union[
+            Table[
+            LieSeries`LieSeriesInitialize[{"X", "Y"}, 12, LieSeries`HallOrder -> 
+               Part[$CellContext`cfg, 1], LieSeries`Reversed -> 
+               Part[$CellContext`cfg, 2]]; 
+             Module[{$CellContext`A = \
+$CellContext`randomSeries[$CellContext`a], $CellContext`B = \
+$CellContext`randomSeries[$CellContext`b], $CellContext`sub}, $CellContext`sub[
+                  Pattern[$CellContext`s, 
+                   Blank[]]] := 
+                LieSeries`LieSeriesSubstitution[$CellContext`s, {
+                  "X" -> $CellContext`m12A, 
+                   "Y" -> $CellContext`m12B}]; $CellContext`sub[
+                  LieSeries`LieBracket[$CellContext`A, $CellContext`B]] == 
+                LieSeries`LieBracket[
+                  $CellContext`sub[$CellContext`A], 
+                  $CellContext`sub[$CellContext`B]]], {$CellContext`cfg, {{
+               "Standard", True}, {"Standard", False}, {"Lyndon", False}, {
+               "PDegree", True}}}]]], "ExpectedMessages" -> HoldForm[{}], 
+         "ActualOutput" -> HoldForm[{True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.961472`6.13345163906114, "CPUTimeUsed" -> 
+         0.9584439999999992, "MemoryUsed" -> 17787488, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> HoldForm[{True}], 
+         "Outcome" -> "Success", "FailureType" -> None|>], 
+      8411237022868788837 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642036251283`15.656168686610307*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "62e56320-c181-4d6d-9187-cae4d52ef2e4", "TestID" -> 
+         "BCH-matrices-degree-12", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "d9c55ecd-9025-4e2e-a5b5-9d6706403074", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 12]; {
+            LieSeries`BCH[$CellContext`m12A, $CellContext`m12B] == \
+$CellContext`nilLog[
+               Dot[
+                $CellContext`nilExp[$CellContext`m12A], 
+                $CellContext`nilExp[$CellContext`m12B]]], 
+             LieSeries`SymmetricBCH[$CellContext`m12A, $CellContext`m12B] == \
+$CellContext`nilLog[
+               Dot[
+                $CellContext`nilExp[$CellContext`m12A/2], 
+                $CellContext`nilExp[$CellContext`m12B], 
+                $CellContext`nilExp[$CellContext`m12A/2]]]}], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True, True}], "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.205786`5.463930823411164, "CPUTimeUsed" -> 0.2138219999999995, 
+         "MemoryUsed" -> 1606248, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{True, True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 3848337361551885173 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642036457472`15.656168686632668*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "06dac248-16f8-4f1a-b631-dcc6e47ae584", "TestID" -> 
+         "Structure-constants-canonical", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "aae8bfcf-c198-46c2-be54-8bc29a49fe4f", "Input" -> HoldForm[
+           Union[
+            Flatten[
+             Table[
+             LieSeries`LieSeriesInitialize[{"X", "Y"}, 10, 
+                LieSeries`HallOrder -> $CellContext`ord, LieSeries`Reversed -> 
+                False]; Table[
+                Map[
+                 Function[$CellContext`rule, 
+                  
+                  With[{$CellContext`s = 
+                    Part[$CellContext`rule, 1, 1], $CellContext`u = 
+                    Part[$CellContext`rule, 1, 2], $CellContext`v = 
+                    Part[$CellContext`rule, 1, 3], $CellContext`w = 
+                    Part[$CellContext`rule, 2]}, 
+                   And[$CellContext`u < $CellContext`v, 
+                    IntegerQ[$CellContext`w], $CellContext`w != 0, 
+                    LieSeries`Private`degree[$CellContext`s] == \
+$CellContext`n == LieSeries`Private`degree[$CellContext`u] + 
+                    LieSeries`Private`degree[$CellContext`v]]]], 
+                 
+                 LieSeries`Private`bracketRules[$CellContext`n]], \
+{$CellContext`n, 2, 10}], {$CellContext`ord, $CellContext`$orders}]]]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True}], "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.221454`5.495798526942448, "CPUTimeUsed" -> 0.2215050000000005, 
+         "MemoryUsed" -> -1671512, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 449317839223691736 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642036679277`15.656168686656718*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "f72bba35-e062-429d-9cd2-be259b0fa283", "TestID" -> 
+         "Bracket-regression-degree-11", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "cfcff639-c428-421a-80d7-9e8fa59eb88a", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{"X", "Y"}, 11, LieSeries`Reversed -> 
+             False]; Module[{$CellContext`e}, $CellContext`e[
+                Pattern[$CellContext`i, 
+                 Blank[]]] := ReplaceAll[
+                LieSeries`GenericLieSeries[$CellContext`a], $CellContext`a[
+                  Pattern[$CellContext`k, 
+                   Blank[]]] :> Boole[$CellContext`k == $CellContext`i]]; 
+             Select[
+               Thread[Range[
+                  Length[
+                   LieSeries`HallBasisElements[11]]] -> 
+                LieSeries`HallCoefficients[
+                  LieSeries`LieBracket[
+                   $CellContext`e[1], 
+                   $CellContext`e[203]]]], Last[#] =!= 0& ]]], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{341 -> -1, 377 -> -1, 404 -> -1}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.056361`4.901493687922774, "CPUTimeUsed" -> 
+         0.05631299999999939, "MemoryUsed" -> 584832, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{341 -> -1, 377 -> -1, 404 -> -1}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 4648062761814603355 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642036735876`15.656168686662857*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "61443265-ef84-4051-89a7-eca99351dca7", "TestID" -> 
+         "Hall-orders-checked", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "7a1b7607-f1f8-4199-8b81-01cafc2db5bd", "Input" -> HoldForm[
+           Union[
+            Table[
+            LieSeries`LieSeriesInitialize[{"X", "Y"}, 8, 
+               LieSeries`HallOrder -> $CellContext`ord, 
+               LieSeries`CheckLessFunction -> True]; 
+             LieSeries`LieSeriesBasisInfo[][
+               "HallOrder"] === $CellContext`ord, {$CellContext`ord, \
+$CellContext`$orders}]]], "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True}], "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.110996`5.195822326085058, "CPUTimeUsed" -> 0.11091499999999943`, 
+         "MemoryUsed" -> -1143456, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm[{True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 846098677291495353 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642036847142`15.656168686674924*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "aa27aa8b-5ac8-4636-a540-b8474a08510c", "TestID" -> 
+         "Invalid-order-detected", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "f7764e53-0284-4c0e-8505-01d597482db5", "Input" -> HoldForm[
+           
+           Module[{$CellContext`res}, 
+            LieSeries`Private`$hallOrders["ReverseIndex"] = <|
+              "Less" -> (# > #2& ), "Description" -> 
+               "invalid order, used only in the tests"|>; $CellContext`res = 
+             Quiet[
+               Check[
+               LieSeries`LieSeriesInitialize[{"X", "Y"}, 4, 
+                  LieSeries`HallOrder -> "ReverseIndex"]; "no message", 
+                "order3", 
+                MessageName[LieSeries`LieSeriesInitialize, "order3"]], {
+                MessageName[LieSeries`LieSeriesInitialize, "order3"], 
+                MessageName[General, "stop"]}]; 
+            KeyDropFrom[
+             LieSeries`Private`$hallOrders, 
+              "ReverseIndex"]; $CellContext`res]], "ExpectedMessages" -> 
+         HoldForm[{}], "ActualOutput" -> HoldForm["order3"], 
+         "ActualMessages" -> {}, "AbsoluteTimeUsed" -> 
+         0.000813`3.0606055434260617, "CPUTimeUsed" -> 0.0008129999999999526, 
+         "MemoryUsed" -> -173592, "IntermediateTestsTree" -> {}, 
+         "ExpectedOutput" -> HoldForm["order3"], "Outcome" -> "Success", 
+         "FailureType" -> None|>], 1257537331988841788 -> 
+      TestObject[<|
+        "MetaInformation" -> None, "AbsoluteTime" -> 
+         4.004642036848465`15.65616868667507*^9, "SameTest" -> SameQ, 
+         "SameMessages" -> Testing`MessageMatchQ, "MemoryConstraint" -> 
+         DirectedInfinity[1], "TimeConstraint" -> DirectedInfinity[1], 
+         "CreationID" -> "0ebeb548-001d-4545-acb3-5ef8609b370d", "TestID" -> 
+         "Published-BCH-tables", "TestFileName" -> 
+         "/Users/amurua/Nextcloud/nereak/ik/wip/2026/LieSeries/berriak/\
+LieSeries1.0/Tests/LieSeries.wlt", "EvaluationID" -> 
+         "f2f63dcd-c9f5-48a4-a3ff-13d0367ad80f", "Input" -> 
+         HoldForm[
+          LieSeries`LieSeriesInitialize[{
+             "X", "Y"}, $CellContext`$tableDegree]; {
+             $CellContext`tableCheck[
+             "bchHall20.dat", LieSeries`$BCHLieSeries], 
+             $CellContext`tableCheck[
+             "bchLyndon20.dat", LieSeries`$BCHLieSeries], 
+             $CellContext`tableCheck[
+             "sbchHall19.dat", LieSeries`$SymmetricBCHLieSeries], 
+             $CellContext`tableCheck[
+             "sbchLyndon19.dat", LieSeries`$SymmetricBCHLieSeries]}], 
+         "ExpectedMessages" -> HoldForm[{}], "ActualOutput" -> 
+         HoldForm[{True, True, True, True}], "ActualMessages" -> {}, 
+         "AbsoluteTimeUsed" -> 0.045016`4.80388189997793, "CPUTimeUsed" -> 
+         0.0449850000000005, "MemoryUsed" -> 195568, 
+         "IntermediateTestsTree" -> {}, "ExpectedOutput" -> 
+         HoldForm[{True, True, True, True}], "Outcome" -> "Success", 
+         "FailureType" -> None|>]|>, "FailureResults" -> <||>, 
+    "TestsNotEvaluatedKeys" -> {}, "TestsFailedWrongResultsKeys" -> {}, 
+    "TestsFailedWithMessagesKeys" -> {}, 
+    "TestsSucceededKeys" -> {3680039981266855060, 7089801095218919926, 
+     6192006843020759219, 4928914009785662453, 7009819577200590196, 
+     5549778542909352439, 2667679774140330591, 5625028907348583731, 
+     1526490936985960710, 8632452259919288654, 8234529917791956670, 
+     3309642681618389406, 3482274507907071485, 3492935570553283856, 
+     4818330733471980677, 8958728228837575694, 6497273451189471297, 
+     3853448679405087584, 5806401934442099266, 4935107368641214494, 
+     7152944192762459613, 6888672532364868776, 7075724375487024538, 
+     201157597030230637, 4443999391768974255, 6348033984553825058, 
+     3881709909166108897, 8526203608211780829, 1074118295097549266, 
+     8411237022868788837, 3848337361551885173, 449317839223691736, 
+     4648062761814603355, 846098677291495353, 1257537331988841788}|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{4.0044062355275173`*^9, 4.0044062517527514`*^9}, 
+   4.004406337953891*^9, 4.004406412873735*^9, 4.004406454849366*^9, {
+   4.004417160431569*^9, 4.004417184769865*^9}, 4.004419404737883*^9, 
+   4.004488076614285*^9, 4.004488218970109*^9, 4.004489088857871*^9, {
+   4.004495211419032*^9, 4.004495231670514*^9}, 4.004502792972312*^9, 
+   4.0045144297555017`*^9, 4.0045145214961767`*^9, 4.004514747940899*^9, 
+   4.004514917919849*^9, 4.00451591565886*^9, {4.004634937543498*^9, 
+   4.00463495348359*^9}, 4.0046350241521893`*^9, 4.004636462675378*^9, 
+   4.004641946568741*^9, 4.004642037069868*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"1db34cc8-6fc7-4447-a62a-e9ad52def7ec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"#", "[", "\"\<TestID\>\"", "]"}], ",", 
+      RowBox[{"#", "[", "\"\<Outcome\>\"", "]"}], ",", 
+      RowBox[{"#", "[", "\"\<ActualOutput\>\"", "]"}], ",", 
+      RowBox[{"#", "[", "\"\<ActualMessages\>\"", "]"}]}], "}"}], "&"}], ",", 
+   
+   RowBox[{"Values", "@", 
+    RowBox[{"Select", "[", 
+     RowBox[{
+      RowBox[{"report", "[", "\"\<TestResults\>\"", "]"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"#", "[", "\"\<Outcome\>\"", "]"}], 
+        "=!=", "\"\<Success\>\""}], "&"}]}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{4.004488769480418*^9, 4.004488769480455*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"7c70d6e8-c1be-454c-9b01-efee2eb28f63"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{4.004488770813171*^9, 4.0044890974887257`*^9, 
+  4.004495237196567*^9, 4.00451443581423*^9, 4.0045145281903257`*^9, 
+  4.004514752067115*^9, 4.004515923185628*^9, 4.004635027670206*^9, 
+  4.004636466719822*^9, 4.004641953752788*^9, 4.0046420424809732`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"647b7c23-282e-4895-8731-19fc8620575e"]
+}, Open  ]]
+},
+WindowSize->{2015, 1023},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+TaggingRules->{"TryRealOnly" -> False},
+Magnification:>2. Inherited,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1f8f3e6d-ceab-4e89-999d-abdb325186dc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 966, 20, 181, "Input",ExpressionUUID->"cbc1b24e-f959-46d4-a196-999726d69f36"],
+Cell[1545, 44, 67907, 1206, 115, "Output",ExpressionUUID->"1db34cc8-6fc7-4447-a62a-e9ad52def7ec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69489, 1255, 780, 20, 99, "Input",ExpressionUUID->"7c70d6e8-c1be-454c-9b01-efee2eb28f63"],
+Cell[70272, 1277, 399, 6, 66, "Output",ExpressionUUID->"647b7c23-282e-4895-8731-19fc8620575e"]
+}, Open  ]]
+}
+]
+*)
+
